@@ -1,6 +1,6 @@
 {
   "name": "wxdatabindrn",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "weixin app databind to react-native databind",
   "main": "index.js",
   "scripts": {
