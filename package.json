@@ -1,0 +1,27 @@
+{
+  "name": "wxdatabindrn",
+  "version": "0.0.1",
+  "description": "weixin app databind to react-native databind",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverliye/wxdatabindrn.git"
+  },
+  "keywords": [
+    "weixn",
+    "databind",
+    "react-native"
+  ],
+  "author": "oliverliye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oliverliye/wxdatabindrn/issues"
+  },
+  "homepage": "https://github.com/oliverliye/wxdatabindrn#readme",
+  "devDependencies": {
+    "jest-cli": "^17.0.3"
+  }
+}
