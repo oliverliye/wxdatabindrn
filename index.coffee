@@ -19,7 +19,7 @@ _convertMixed = (data)->
     for item in noBinds
         bd = binds.shift()
         ret.push "'#{item}'#{if bd then "+(#{clearBindLR bd})"  else ''}"
-    "{#{ret.join '+'}}"
+    "#{ret.join '+'}"
 
 convert = (data)->
         if onlyBind.test data

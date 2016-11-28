@@ -18,21 +18,21 @@ test 'clearBindLR => {{bind}}', ()->
 
 # css databind
 test 'width:{{width}}', ()->
-    expect(convert('width:{{width}}')).toBe "{'width:'+(width)+''}"
+    expect(convert('width:{{width}}')).toBe "'width:'+(width)+''"
 
 test '{{width}}:{{value}}', ()->
-    expect(convert('{{width}}:{{value}}')).toBe "{''+(width)+':'+(value)+''}"
+    expect(convert('{{width}}:{{value}}')).toBe "''+(width)+':'+(value)+''"
 
 # attr databind
 test '{{true}}', ()->
     expect(convert('{{true}}')).toBe "{true}"
 
 test 'This is a {{text}}', ()->
-    expect(convert('This is a {{text}}')).toBe "{'This is a '+(text)+''}"
+    expect(convert('This is a {{text}}')).toBe "'This is a '+(text)+''"
 
 
 test '{{text}} is a word', ()->
-    expect(convert('{{text}} is a word')).toBe "{''+(text)+' is a word'}"
+    expect(convert('{{text}} is a word')).toBe "''+(text)+' is a word'"
 
 # test 'isBind left => {{bind}}right', ()->
 #     expect(isBind('{{bind}}right')).toBe true

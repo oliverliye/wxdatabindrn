@@ -20,11 +20,11 @@ test('clearBindLR => {{bind}}', function() {
 });
 
 test('width:{{width}}', function() {
-  return expect(convert('width:{{width}}')).toBe("{'width:'+(width)+''}");
+  return expect(convert('width:{{width}}')).toBe("'width:'+(width)+''");
 });
 
 test('{{width}}:{{value}}', function() {
-  return expect(convert('{{width}}:{{value}}')).toBe("{''+(width)+':'+(value)+''}");
+  return expect(convert('{{width}}:{{value}}')).toBe("''+(width)+':'+(value)+''");
 });
 
 test('{{true}}', function() {
@@ -32,9 +32,9 @@ test('{{true}}', function() {
 });
 
 test('This is a {{text}}', function() {
-  return expect(convert('This is a {{text}}')).toBe("{'This is a '+(text)+''}");
+  return expect(convert('This is a {{text}}')).toBe("'This is a '+(text)+''");
 });
 
 test('{{text}} is a word', function() {
-  return expect(convert('{{text}} is a word')).toBe("{''+(text)+' is a word'}");
+  return expect(convert('{{text}} is a word')).toBe("''+(text)+' is a word'");
 });

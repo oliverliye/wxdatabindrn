@@ -41,7 +41,7 @@ _convertMixed = function(data) {
     bd = binds.shift();
     ret.push("'" + item + "'" + (bd ? "+(" + (clearBindLR(bd)) + ")" : ''));
   }
-  return "{" + (ret.join('+')) + "}";
+  return "" + (ret.join('+'));
 };
 
 convert = function(data) {
